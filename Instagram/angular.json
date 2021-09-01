@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "Instagram"
+  "defaultProject": "Instagram",
+  "cli": {
+    "analytics": "a2a454d2-976b-4abb-ac8f-f4cbfb9cdebf"
+  }
 }
