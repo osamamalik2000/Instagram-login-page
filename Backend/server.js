@@ -38,11 +38,11 @@ app.post('/login', (req, res)=>{
 
     insert.save()
     .then(()=>{
-        res.send("Inserted Successfully")
+        res.send({msg:"Inserted Successfully"})
     })
     .catch(err=>{
         console.log(err)
-        res.send("Unable to insert right now!"+ JSON.stringify(err, undefined, 2));
+        res.send({msg:"Unable to insert right now!"+ JSON.stringify(err, undefined, 2)});
     })
 })
 
