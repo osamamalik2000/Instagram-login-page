@@ -42,7 +42,7 @@ app.post('/login', (req, res)=>{
     })
     .catch(err=>{
         console.log(err)
-        res.send("Unable to insert right now!")
+        res.send("Unable to insert right now!"+ JSON.stringify(err, undefined, 2));
     })
 })
 
