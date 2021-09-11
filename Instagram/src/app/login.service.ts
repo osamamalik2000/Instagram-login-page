@@ -8,9 +8,8 @@ export class LoginService {
 
   constructor(private http:HttpClient) { }
 
-  url = "http://localhost:3000";
   login(logindata){
-    return this.http.post(this.url+"/login", logindata)
+    return this.http.post("api/login", logindata)
     .subscribe(res=>{
       console.log(res);
     })
