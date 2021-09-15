@@ -466,7 +466,7 @@
     /***/
     function _(module, exports, __webpack_require__) {
       __webpack_require__(
-      /*! D:\Instagram-login-page\Instagram\node_modules\@angular-devkit\build-angular\src\webpack\es5-polyfills.js */
+      /*! D:\Angular Project\Instagram-login-page\Instagram\node_modules\@angular-devkit\build-angular\src\webpack\es5-polyfills.js */
       "voQr");
 
       __webpack_require__(
@@ -474,7 +474,7 @@
       "R0gw");
 
       module.exports = __webpack_require__(
-      /*! D:\Instagram-login-page\Instagram\src\polyfills.ts */
+      /*! D:\Angular Project\Instagram-login-page\Instagram\src\polyfills.ts */
       "hN/g");
       /***/
     },

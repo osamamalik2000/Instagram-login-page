@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\Instagram-login-page\Instagram\src\polyfills.ts */"hN/g");
+module.exports = __webpack_require__(/*! D:\Angular Project\Instagram-login-page\Instagram\src\polyfills.ts */"hN/g");
 
 
 /***/ }),
